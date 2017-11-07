@@ -33,11 +33,19 @@ class Stepper extends Component {
                         <TopButtons show={this.props.topButtons} previous={true}
                                     currentIndex={this.state.currentStep.index}/>
 
-                        <StepIndicator/>
+                        {/*Loops through indicator to show based on step amount*/}
+                        {this.props.steps.map( (step, index, array) =>
+                            <StepIndicator step={step} index={index} stepsLength={array.length}
+                                           currentStep={this.state.currentStep}/>
+                        )}
 
                         <TopButtons show={this.props.topButtons} previous={false}
                                     currentIndex={this.state.currentStep.index}/>
                     </div>
+                </div>
+
+                <div className="content">
+
                 </div>
             </div>
         )
