@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 import '../publish_component/Stepper'
 import Stepper from '../publish_component/Stepper';
-import DummyData from '../publish_component/DummyData'
+import DummyData from './DummyData'
 
 class App extends Component {
     constructor(props) {
@@ -19,8 +19,8 @@ class App extends Component {
     render() {
         return (
             <div className="container-fluid App no-gutters">
-                <div className="row" style={{marginBottom: '2rem'}}>
-                    <div className="col no-gutters">
+                <div className="row no-gutters" style={{marginBottom: '2rem'}}>
+                    <div className="col">
                         <header className="App-header">
                             <img src={logo} className="App-logo" alt="logo"/>
                             <h1 className="App-title">Welcome to React</h1>

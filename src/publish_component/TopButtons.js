@@ -6,7 +6,7 @@ class TopButtons extends Component {
         // Render if current step index > 0
         let topButton = null;
         if (this.props.show) {
-            if(this.props.previous) {
+            if (this.props.previous) {
                 if (this.props.currentIndex > 0) {
                     topButton =
                         <div className={['stepper-button-top', this.props.previous ? 'previous' : 'next'].join(' ')}>
