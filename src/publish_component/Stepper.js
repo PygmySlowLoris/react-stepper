@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import {CSSTransition} from 'react-transition-group'
+import update from 'immutability-helper';
 
 //Styles
 import './Stepper.css'
@@ -20,7 +21,7 @@ class Stepper extends Component {
             currentStep: {},
             previousStep: {},
             nextButton: {},
-            canContinue: false,
+            canContinue: true,
             finalStep: false,
             stepComponent: '',
             transition: true,
@@ -39,8 +40,9 @@ class Stepper extends Component {
     activateStep(index, back = false) {
         if (this.props.steps[index]) {
             // Setting states
+            this.setState({previousStep: this.state.currentStep});
+
             this.setState((prevState, props) => ({
-                previousStep: prevState.currentStep,
                 currentStep: {
                     name: props.steps[index].name,
                     index: index
@@ -53,14 +55,26 @@ class Stepper extends Component {
                 this.setState({finalStep: false})
             }
 
+            console.log(this.state.previousStep);
+
             if (!back) {
-                // this.$emit('completed-step', this.previousStep);
+                // LiftUp
+                this.props.completedStep(this.state.previousStep);
             }
         }
-        // this.$emit('active-step', this.currentStep);
+        // LiftUp
+        // this.props.activeStep(this.state.currentStep);
     }
 
     nextStep() {
+        let newNextButton = update(this.state, {
+            nextButton:  {[this.state.currentStep.name]: {$set: true}},
+        });
+        this.setState({
+            ...newNextButton,
+            canContinue: false
+        });
+
         this.setState({
             classNameTransitions: {
                 enter: 'animated fadeInRight',
@@ -74,7 +88,8 @@ class Stepper extends Component {
             this.setState({transition: false});
 
             if (this.state.finalStep) {
-                // this.$emit('stepper-finished', this.currentStep);
+                // LiftUp
+                this.props.stepperFinished(this.state.currentStep);
             }
 
             let currentIndex = this.state.currentStep.index + 1;
@@ -85,15 +100,10 @@ class Stepper extends Component {
                 this.setState((prevState, props) => ({
                     stepComponent: props.steps[prevState.currentStep.index].component,
                     transition: true
-                }))
+                }));
             }, this.state.transitionTimeout)
 
         }
-        this.setState((prevState) => ({
-            nextButton: {[prevState.currentStep.name]: true},
-            canContinue: false
-        }));
-        this.forceUpdate();
     }
 
     backStep() {
@@ -105,9 +115,11 @@ class Stepper extends Component {
                 enterActive: 'animated fadeInLeft',
             }
         });
-        this.forceUpdate();
-        // this.$emit('clicking-back');
+
         this.setState({transition: false});
+
+        // LiftUp
+        // this.props.clickingBack();
 
         // Handle transition and component render
         setTimeout(() => {
@@ -132,24 +144,27 @@ class Stepper extends Component {
     }
 
     changeNextBtnValue(payload) {
-        this.setState((prevState, props) => ({
-            nextButton: {
-                [prevState.currentStep.name]: payload.nextBtnValue
-            }
-        }));
-        this.forceUpdate();
+        let newNextBtnValue = update(this.state, {
+           nextButton: {[this.state.currentStep.name]: {$set: payload.nextBtnValue}}
+        });
+        this.setState(newNextBtnValue);
     }
 
     // Component Lifecycle
     componentWillMount() {
         // Initiate stepper
         this.activateStep(0);
+        let newNextButton = {};
+
         this.props.steps.forEach((step) => {
-            this.setState((prevState, props) => ({
-                nextButton: {[step.name]: false},
-                stepComponent: props.steps[prevState.currentStep.index].component
-            }))
+            newNextButton = Object.assign(newNextButton, {[step.name]: false})
         });
+
+        this.setState((prevState, props) => ({
+            stepComponent: props.steps[prevState.currentStep.index].component,
+            nextButton: newNextButton
+        }));
+
     }
 
     render() {
@@ -210,7 +225,11 @@ Stepper.propTypes = {
     locale: PropTypes.string,
     topButtons: PropTypes.bool,
     steps: PropTypes.array,
-    keepAlive: PropTypes.bool
+    keepAlive: PropTypes.bool,
+    clickingBack: PropTypes.func,
+    completedStep: PropTypes.func,
+    activeStep: PropTypes.func,
+    stepperFinished: PropTypes.func
 };
 
 Stepper.defaultProps = {

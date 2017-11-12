@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d7c9491-5584-40bb-bb77-bdbce03fb788" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/publish_component/BottomButtons.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/demo/Validadtions.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/demo/App.js" afterPath="$PROJECT_DIR$/src/demo/App.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/demo/DummyData.js" afterPath="$PROJECT_DIR$/src/demo/DummyData.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/demo/StepOne.js" afterPath="$PROJECT_DIR$/src/demo/StepOne.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/publish_component/Stepper.js" afterPath="$PROJECT_DIR$/src/publish_component/Stepper.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/publish_component/TopButtons.js" afterPath="$PROJECT_DIR$/src/publish_component/TopButtons.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,8 +29,8 @@
       <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/demo/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="11" column="21" lean-forward="false" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+            <state relative-caret-position="126">
+              <caret line="21" column="29" lean-forward="false" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -40,8 +41,8 @@
       <file leaf-file-name="DummyData.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/demo/DummyData.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="17" column="26" lean-forward="false" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+            <state relative-caret-position="273">
+              <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -49,14 +50,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StepOne.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="StepOne.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/demo/StepOne.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="511">
-              <caret line="44" column="15" lean-forward="false" selection-start-line="44" selection-start-column="15" selection-end-line="44" selection-end-column="15" />
+            <state relative-caret-position="147">
+              <caret line="10" column="27" lean-forward="false" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Validadtions.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/demo/Validadtions.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="294">
+              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -98,8 +109,8 @@
       <file leaf-file-name="BottomButtons.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/publish_component/BottomButtons.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="567">
-              <caret line="27" column="9" lean-forward="false" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+            <state relative-caret-position="315">
+              <caret line="18" column="51" lean-forward="false" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="51" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -107,15 +118,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Stepper.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Stepper.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/publish_component/Stepper.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="201" column="92" lean-forward="false" selection-start-line="201" selection-start-column="92" selection-end-line="201" selection-end-column="92" />
+            <state relative-caret-position="359">
+              <caret line="49" column="19" lean-forward="false" selection-start-line="44" selection-start-column="15" selection-end-line="49" selection-end-column="19" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
-                <element signature="e#139#161#0" expanded="true" />
-                <element signature="e#197#235#0" expanded="true" />
+                <element signature="e#181#203#0" expanded="true" />
+                <element signature="e#239#277#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -143,6 +154,12 @@
       <find>b</find>
       <find>topButton</find>
       <find>finalStep</find>
+      <find>isEmail</find>
+      <find>control</find>
+      <find>...</find>
+      <find>emit</find>
+      <find>completedStep</find>
+      <find>onNextStep</find>
     </findStrings>
     <replaceStrings>
       <replace>demo</replace>
@@ -172,15 +189,16 @@
         <option value="$PROJECT_DIR$/src/demo/publish_component/DummyData.js" />
         <option value="$PROJECT_DIR$/src/demo/App.scss" />
         <option value="$PROJECT_DIR$/src/publish_component/StepIndicator.js" />
-        <option value="$PROJECT_DIR$/src/demo/App.js" />
         <option value="$PROJECT_DIR$/src/publish_component/DummyData.js" />
         <option value="$PROJECT_DIR$/src/demo/StepTwo.js" />
-        <option value="$PROJECT_DIR$/src/demo/DummyData.js" />
         <option value="$PROJECT_DIR$/src/publish_component/TopButtons.js" />
-        <option value="$PROJECT_DIR$/src/publish_component/Stepper.js" />
         <option value="$PROJECT_DIR$/src/publish_component/BottomButtons.js" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/src/demo/Validadtions.js" />
         <option value="$PROJECT_DIR$/src/demo/StepOne.js" />
+        <option value="$PROJECT_DIR$/src/demo/DummyData.js" />
+        <option value="$PROJECT_DIR$/src/demo/App.js" />
+        <option value="$PROJECT_DIR$/src/publish_component/Stepper.js" />
       </list>
     </option>
   </component>
@@ -202,9 +220,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="820" />
+    <option name="x" value="67" />
     <option name="y" value="25" />
-    <option name="width" value="1100" />
+    <option name="width" value="1110" />
     <option name="height" value="1055" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -290,16 +308,16 @@
     <property name="list.type.of.created.stylesheet" value="SCSS" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/demo" />
+      <recent name="$PROJECT_DIR$/src/publish_component" />
+      <recent name="$PROJECT_DIR$/src/demo/publish_component" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/demo" />
       <recent name="$PROJECT_DIR$/src/publish_component" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/publish_component" />
-      <recent name="$PROJECT_DIR$/src/demo" />
-      <recent name="$PROJECT_DIR$/src/demo/publish_component" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -408,12 +426,13 @@
       <workItem from="1509896777628" duration="6390000" />
       <workItem from="1510078027109" duration="3222000" />
       <workItem from="1510417001122" duration="5460000" />
-      <workItem from="1510480115029" duration="6605000" />
+      <workItem from="1510480115029" duration="7428000" />
+      <workItem from="1510506364222" duration="10621000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24207000" />
+    <option name="totallyTimeSpent" value="35651000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="7" />
@@ -426,8 +445,8 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32893288" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33766234" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -437,8 +456,8 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24958494" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -490,24 +509,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/demo/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="11" column="21" lean-forward="false" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/demo/App.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/demo/DummyData.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
@@ -562,8 +563,8 @@
           <caret line="114" column="0" lean-forward="true" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
-            <element signature="e#139#161#0" expanded="true" />
-            <element signature="e#197#235#0" expanded="true" />
+            <element signature="e#181#203#0" expanded="true" />
+            <element signature="e#239#277#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -592,8 +593,8 @@
           <caret line="46" column="16" lean-forward="false" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="16" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
-            <element signature="e#139#161#0" expanded="true" />
-            <element signature="e#197#235#0" expanded="true" />
+            <element signature="e#181#203#0" expanded="true" />
+            <element signature="e#239#277#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -644,8 +645,8 @@
           <caret line="35" column="39" lean-forward="false" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="39" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
-            <element signature="e#139#161#0" expanded="true" />
-            <element signature="e#197#235#0" expanded="true" />
+            <element signature="e#181#203#0" expanded="true" />
+            <element signature="e#239#277#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -720,8 +721,8 @@
           <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
-            <element signature="e#139#161#0" expanded="true" />
-            <element signature="e#197#235#0" expanded="true" />
+            <element signature="e#181#203#0" expanded="true" />
+            <element signature="e#239#277#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -733,7 +734,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package-lock.json" />
     <entry file="file://$PROJECT_DIR$/src/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -752,7 +752,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -829,50 +828,75 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/demo/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="21" lean-forward="false" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/animate.css/animate.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1071">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/demo/StepTwo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="20" lean-forward="false" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/demo/DummyData.js">
+    <entry file="file://$PROJECT_DIR$/node_modules/validator/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="17" column="26" lean-forward="false" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="306">
+          <caret line="34" column="37" lean-forward="false" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="37" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/publish_component/Stepper.js">
+    <entry file="file://$PROJECT_DIR$/node_modules/react-validation/build/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="0" column="1966" lean-forward="false" selection-start-line="0" selection-start-column="1959" selection-end-line="0" selection-end-column="1966" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="26" column="30" lean-forward="false" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/publish_component/StepIndicator.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="441">
-          <caret line="201" column="92" lean-forward="false" selection-start-line="201" selection-start-column="92" selection-end-line="201" selection-end-column="92" />
+          <caret line="21" column="83" lean-forward="false" selection-start-line="21" selection-start-column="73" selection-end-line="21" selection-end-column="83" />
           <folding>
-            <element signature="e#0#39#0" expanded="true" />
-            <element signature="e#139#161#0" expanded="true" />
-            <element signature="e#197#235#0" expanded="true" />
+            <element signature="e#0#38#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/publish_component/BottomButtons.js">
+    <entry file="file://$PROJECT_DIR$/src/demo/Validadtions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="27" column="9" lean-forward="false" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+        <state relative-caret-position="294">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/demo/StepOne.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="10" column="27" lean-forward="false" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
@@ -889,38 +913,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/publish_component/StepIndicator.js">
+    <entry file="file://$PROJECT_DIR$/src/demo/DummyData.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="21" column="83" lean-forward="false" selection-start-line="21" selection-start-column="73" selection-end-line="21" selection-end-column="83" />
+        <state relative-caret-position="273">
+          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/publish_component/BottomButtons.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="18" column="51" lean-forward="false" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="51" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/demo/StepTwo.js">
+    <entry file="file://$PROJECT_DIR$/src/demo/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
-          <caret line="7" column="20" lean-forward="false" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="15" column="38" lean-forward="false" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/demo/StepOne.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="511">
-          <caret line="44" column="15" lean-forward="false" selection-start-line="44" selection-start-column="15" selection-end-line="44" selection-end-column="15" />
+          <caret line="21" column="29" lean-forward="false" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
           <folding>
-            <element signature="e#0#38#0" expanded="true" />
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/publish_component/Stepper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="49" column="19" lean-forward="false" selection-start-line="44" selection-start-column="15" selection-end-line="49" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#181#203#0" expanded="true" />
+            <element signature="e#239#277#0" expanded="true" />
           </folding>
         </state>
       </provider>

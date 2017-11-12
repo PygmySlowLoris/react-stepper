@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import '../publish_component/Stepper'
 import Stepper from '../publish_component/Stepper';
 import DummyData from './DummyData'
+import update from 'immutability-helper'
 
 class App extends Component {
     constructor(props) {
@@ -13,6 +14,24 @@ class App extends Component {
         this.state = {
             steps: DummyData
         };
+
+        this.completeStep = this.completeStep.bind(this)
+    }
+
+    completeStep(payload) {
+        console.log(payload);
+        this.state.steps.forEach((step, index) => {
+            if (step.name === payload.name) {
+                let stepCompleted = update(this.state, {
+                    steps: {
+                        [index]: {
+                            completed: {$set: true}
+                        }
+                    }
+                });
+                this.setState(stepCompleted);
+            }
+        })
     }
 
 
@@ -29,7 +48,7 @@ class App extends Component {
                 </div>
                 <div className="row justify-content-center align-items-center">
                     <div className="col-8">
-                        <Stepper steps={this.state.steps}/>
+                        <Stepper steps={this.state.steps} completedStep={this.completeStep}/>
                     </div>
                 </div>
             </div>

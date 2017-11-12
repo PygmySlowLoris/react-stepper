@@ -1,13 +1,28 @@
 import React, {Component} from 'react'
-import PropTypes from 'prop-types'
+import {required, email} from "./Validadtions";
 
 class StepOne extends Component {
+    constructor(props) {
+        super(props);
 
-    // Component Lifecycle
-    componentWillMount() {
-        setTimeout(()=> {
-            this.props.canContinue({value: true})
-        }, 5000)
+        this.state = {
+            email: '',
+            name: '',
+            checkbox: false
+        };
+
+        // Bind methods
+        this.handleInputChange = this.handleInputChange.bind(this)
+    }
+
+    handleInputChange(event) {
+        const target = event.target;
+        const value = target.type === 'checkbox' ? target.checked : target.value;
+        const name = target.name;
+
+        this.setState({
+            [name]: value
+        });
     }
 
     render() {
@@ -15,12 +30,15 @@ class StepOne extends Component {
             <div style={{padding: '2rem 3rem', textAlign: 'left'}}>
                 <div className="form-group">
                     <label>Email address</label>
-                    <input type="email" className="form-control" placeholder="Enter email"/>
-                    <small className="form-text text-muted">We'll never share your email with anyone else.</small>
+                    <input type="email" className="form-control" name="email" placeholder="Enter email"
+                           value={this.state.email} onChange={this.handleInputChange}
+                    />
                 </div>
                 <div className="form-group">
-                    <label>Password</label>
-                    <input type="password" className="form-control" placeholder="Password"/>
+                    <label>Name</label>
+                    <input type="text" className="form-control" name="name" placeholder="Name"
+                           value={this.state.name} onChange={this.handleInputChange}
+                    />
                 </div>
                 <div className="form-check">
                     <label className="form-check-label">

@@ -7,6 +7,7 @@ export default [
         name: 'first',
         title: 'Sample title 1',
         subtitle: 'Subtitle sample',
+        completed: false,
         component: StepOne
 
     },
@@ -15,6 +16,7 @@ export default [
         name: 'second',
         title: 'Sample title 2',
         subtitle: 'Subtitle sample',
+        completed: false,
         component: StepTwo
     }
 ]
