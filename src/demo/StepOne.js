@@ -2,6 +2,14 @@ import React, {Component} from 'react'
 import PropTypes from 'prop-types'
 
 class StepOne extends Component {
+
+    // Component Lifecycle
+    componentWillMount() {
+        setTimeout(()=> {
+            this.props.canContinue({value: true})
+        }, 5000)
+    }
+
     render() {
         return (
             <div style={{padding: '2rem 3rem', textAlign: 'left'}}>

@@ -9,13 +9,15 @@ class TopButtons extends Component {
             if (this.props.previous) {
                 if (this.props.currentIndex > 0) {
                     topButton =
-                        <div className={['stepper-button-top', this.props.previous ? 'previous' : 'next'].join(' ')}>
+                        <div className={['stepper-button-top', this.props.previous ? 'previous' : 'next'].join(' ')}
+                             onClick={this.props.onBackStep}>
                             <i className="material-icons">keyboard_arrow_left</i>
                         </div>
                 }
             } else {
                 topButton =
-                    <div className={['stepper-button-top', this.props.previous ? 'previous' : 'next'].join(' ')}>
+                    <div className={['stepper-button-top next', !this.props.canContinue ? 'deactivated' : ''].join(' ')}
+                         onClick={this.props.onNextStep}>
                         <i className="material-icons">keyboard_arrow_right</i>
                     </div>
             }
@@ -30,7 +32,10 @@ class TopButtons extends Component {
 TopButtons.propTypes = {
     previous: PropTypes.bool,
     currentIndex: PropTypes.number,
-    show: PropTypes.bool
+    show: PropTypes.bool,
+    canContinue: PropTypes.bool,
+    onBackStep: PropTypes.func,
+    onNextStep: PropTypes.func
 };
 
 export default TopButtons;
