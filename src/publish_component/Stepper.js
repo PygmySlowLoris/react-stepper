@@ -21,7 +21,7 @@ class Stepper extends Component {
             currentStep: {},
             previousStep: {},
             nextButton: {},
-            canContinue: true,
+            canContinue: false,
             finalStep: false,
             stepComponent: '',
             transition: true,
@@ -40,8 +40,12 @@ class Stepper extends Component {
     activateStep(index, back = false) {
         if (this.props.steps[index]) {
             // Setting states
-            this.setState({previousStep: this.state.currentStep});
+            if (!back) {
+                // LiftUp
+                this.props.completedStep(this.state.currentStep);
+            }
 
+            this.setState({previousStep: this.state.currentStep});
             this.setState((prevState, props) => ({
                 currentStep: {
                     name: props.steps[index].name,
@@ -53,13 +57,6 @@ class Stepper extends Component {
                 this.setState({finalStep: true})
             } else {
                 this.setState({finalStep: false})
-            }
-
-            console.log(this.state.previousStep);
-
-            if (!back) {
-                // LiftUp
-                this.props.completedStep(this.state.previousStep);
             }
         }
         // LiftUp
