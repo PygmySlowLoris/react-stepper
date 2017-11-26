@@ -16,7 +16,7 @@ class StepTwo extends Component {
     render() {
         return (
             <div style={{padding: '2rem 3rem', textAlign: 'left'}}>
-                <div className="btn btn-warning btn-block" onClick={this.handleClick}>
+                <div className="btn btn-warning btn-block" style={{cursor: 'pointer'}} onClick={this.handleClick}>
                     Click to enable finish button
                 </div>
             </div>

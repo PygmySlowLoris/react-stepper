@@ -60,7 +60,7 @@ class Stepper extends Component {
             }
         }
         // LiftUp
-        // this.props.activeStep(this.state.currentStep);
+        this.props.activeStep(this.state.currentStep);
     }
 
     nextStep() {
@@ -82,12 +82,14 @@ class Stepper extends Component {
         });
 
         if (this.state.canContinue) {
-            this.setState({transition: false});
 
             if (this.state.finalStep) {
                 // LiftUp
                 this.props.stepperFinished(this.state.currentStep);
+                return;
             }
+
+            this.setState({transition: false});
 
             let currentIndex = this.state.currentStep.index + 1;
             this.activateStep(currentIndex);
@@ -116,7 +118,7 @@ class Stepper extends Component {
         this.setState({transition: false});
 
         // LiftUp
-        // this.props.clickingBack();
+        this.props.clickingBack();
 
         // Handle transition and component render
         setTimeout(() => {
